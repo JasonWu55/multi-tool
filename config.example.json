@@ -1,0 +1,86 @@
+{
+    "title": "Multi-Tool Toolbox",
+    "version": "1.0.0",
+    "tools": [
+        {
+            "id": 1,
+            "name": "System Information",
+            "description": "Display detailed system information",
+            "command": "systeminfo",
+            "type": "system",
+            "icon": "🖥️",
+            "requiresConfirmation": false
+        },
+        {
+            "id": 2,
+            "name": "Network Test",
+            "description": "Test network connectivity to Google DNS",
+            "command": "ping 8.8.8.8 -n 4",
+            "type": "network",
+            "icon": "🌐",
+            "requiresConfirmation": false
+        },
+        {
+            "id": 3,
+            "name": "Disk Usage",
+            "description": "Display disk space usage for all drives",
+            "command": "wmic logicaldisk get size,freespace,caption",
+            "type": "storage",
+            "icon": "💾",
+            "requiresConfirmation": false
+        },
+        {
+            "id": 4,
+            "name": "Running Processes",
+            "description": "List all currently running processes",
+            "command": "tasklist",
+            "type": "system",
+            "icon": "⚙️",
+            "requiresConfirmation": false
+        },
+        {
+            "id": 5,
+            "name": "Clean Temp Files",
+            "description": "Delete temporary files from system temp folder",
+            "command": "del /q /f %temp%\\*",
+            "type": "maintenance",
+            "icon": "🧹",
+            "requiresConfirmation": true
+        },
+        {
+            "id": 6,
+            "name": "IP Configuration",
+            "description": "Display network adapter configuration",
+            "command": "ipconfig /all",
+            "type": "network",
+            "icon": "🔧",
+            "requiresConfirmation": false
+        },
+        {
+            "id": 7,
+            "name": "Open Calculator",
+            "description": "Launch Windows Calculator application",
+            "command": "calc",
+            "type": "utility",
+            "icon": "🧮",
+            "requiresConfirmation": false
+        },
+        {
+            "id": 8,
+            "name": "Check Windows Updates",
+            "description": "Check for available Windows updates",
+            "command": "powershell Get-WindowsUpdate",
+            "type": "system",
+            "icon": "🔄",
+            "requiresConfirmation": false
+        }
+    ],
+    "ui": {
+        "primaryColor": "cyan",
+        "secondaryColor": "yellow",
+        "errorColor": "red",
+        "successColor": "green",
+        "showBorder": true,
+        "showIcons": true
+    }
+} 
